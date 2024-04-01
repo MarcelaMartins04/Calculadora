@@ -1,2 +1,2 @@
-# Calculadora-de-Convers-o
+# Calculadora
 Calculadora conversora de binário, decimal, hexadecimal e octal
