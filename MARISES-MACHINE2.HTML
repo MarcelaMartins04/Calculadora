@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marise's Machine</title>
+    <title>Mavila's Machine</title>
 
     <style>
         body {
@@ -25,7 +25,7 @@
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
             transition: box-shadow 0.3s ease-in-out;
-            display: none;
+           
         }
 
         .calculadora1 {
@@ -113,11 +113,6 @@
 
 <body>
 
-    <div class="calculadora1">
-        <h1> CALCULADORA MAVILA´S MACHINE</h1>
-        <button onclick="calcular()">Calcular</button>
-    </div>
-
     <div class="calculadora2">
         <h1> Mavila's Machine</h1>
         <input type="text" id="demo1" placeholder="Ensira um número">
@@ -139,10 +134,6 @@
 
     <script>
 
-        function calcular(){
-
-        }
-
         function converter() {
             const NumeroBase = Number(input_numero.value);
             const Numero = demo1.value;
@@ -163,8 +154,8 @@
                     return;
                 }
 
-                if (NumeroBase == 16 && !/^[0-9 ABCDEFGabcdefg]+$/.test(Numero)) {
-                    alert(`Olá o Numero digitado acima não é um numero válido verifique o nùmero e tente novamente. Lembrando que na base${NumeroBase} somente são letras do ABCDEF é números do 1~9 <br>`)
+                if (NumeroBase == 16 && !/^[0-9 ABCDEFabcdef]+$/.test(Numero)) {
+                    alert(`Olá o numero digitado acima não é um numero válido verifique o nùmero e tente novamente. Lembrando que na base${NumeroBase} somente são letras do ABCDEF é números do 1~9`)
                     return;
                 }
 
